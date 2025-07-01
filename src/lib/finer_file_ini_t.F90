@@ -22,7 +22,7 @@ type :: file_ini
   !< INI file class.
   private
   character(len=:), allocatable, public :: filename              !< File name
-  integer(I4P)                          :: Ns = 0                !< Number of sections.
+  integer(I4P), public                  :: Ns = 0                !< Number of sections.
   character(1)                          :: opt_sep = DEF_OPT_SEP !< Separator character of option name/value.
   type(section), allocatable            :: sections(:)           !< Sections.
   contains
